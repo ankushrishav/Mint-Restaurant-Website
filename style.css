@@ -1,0 +1,214 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: black;
+}
+/* Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Nav Bar*/
+#navbar{
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+/* Nav Bar Logo Image */
+#logo{
+    margin: 15px 34px;
+    padding: 0;
+}
+
+#logo img{
+    height: 50px;
+}
+
+/* Nav Bar List item styling */
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    display: block;
+    color: orange;
+    text-decoration: none;
+    padding: 3px 22px;
+   
+}
+#navbar ul li a:hover{  
+    color: wheat; 
+}
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items:center;
+    justify-content: center;
+    height: 980px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('assests/backgrounds/taco.jpg') no-repeat center center/cover;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    
+}
+
+#home h1{
+    
+    text-align: center;
+    
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+#services .box{
+    background: url('assests/backgrounds/prbg.jpg');
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+#services .box img{
+    height: 200px;
+    width: 210px;
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+    border-radius: 40px;
+}
+#services .box p{
+   color: white;
+   padding: 20px;
+}
+/* Client Section */
+#client-section{
+    padding-top: 40px;
+    position: relative;
+    height: 400px;
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   
+   z-index: -1;
+   background: url('assests/backgrounds/dia.jpg');
+   margin: auto;
+   justify-content: center;
+   align-items: center;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 100px;
+}
+
+.client-item{
+  padding: 40px;  
+}
+/* ////////////////////////////////// */
+#navbar2{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+#navbar2 ul{
+    display: flex;
+}
+
+
+#navbar2 ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar2 ul li a{
+    display: block;
+    color: orange;
+    text-decoration: none;
+    padding: 3px 22px;
+   
+}
+#navbar2 ul li a:hover{  
+    color: wheat; 
+}
+
+/* Utility Classes */
+.headPrimary{
+    color: white;
+    font-size: 2.8rem;
+    padding: 15px;
+    text-shadow: 1px 3.5px green;
+}
+.headSecondary{
+    color: orange;
+    font-size: 2rem;
+    padding: 15px;
+    text-shadow: 1px 3px green;
+}
+.btn{
+    font-size: larger;
+    
+    font-family:fantasy ;
+    color: green;
+    
+    padding: 20px 60px;
+    margin-top: 20px;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0px 4px green;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: translateY(2px);
+   color: rgb(224, 147, 2);
+    box-shadow: 0px 0px green;
+}
+
+.center{
+    text-align: center;
+}
